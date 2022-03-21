@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.banner{
+    background-color:darkgreen;
+}
+.mdui-card {
+    margin-top: 10px;
+    border-top: 1px solid black;
+}
+.text1{
+    text-decoration: none;
+  float: right;
+    margin-left: 8px;
+}
