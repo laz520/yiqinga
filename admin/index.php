@@ -64,8 +64,8 @@ include './header.php';
   <ul class="mdui-collapse-item-body mdui-list mdui-list-dense">
     <li class="mdui-list-item mdui-ripple"><a href="gg.php">网站公告设置</a></li>
     <li class="mdui-list-item mdui-ripple"><a href="set.php">网站信息设置</a></li>
-    <li class="mdui-list-item mdui-ripple"><a href="../student/list.php">学生信息管理</a></li>
-    <li class="mdui-list-item mdui-ripple"><a href="../teacher/teacher.php">老师信息管理</a></li>
+    <li class="mdui-list-item mdui-ripple"><a href="list.php">学生信息管理</a></li>
+    <li class="mdui-list-item mdui-ripple"><a href="teacher.php">老师信息管理</a></li>
   </ul>
 </li>
 
