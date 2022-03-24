@@ -2,7 +2,7 @@
 
 include './header.php';
 ?>
-<link rel="stylesheet" href="css/1.css"  />
+<link rel="stylesheet" href="../css/1.css"  />
 <div class="mdui-card ">
     
 <div class="container p-textfield mdui-container">

@@ -1,9 +1,9 @@
-<?php 
+<?php
 
-include './header.php';
+include '../admin/header.php';
 ?>
 
-<link rel="stylesheet" href="css/style.css"  />
+<link rel="stylesheet" href="../css/style.css"  />
 <div class="mdui-card ">
     
 <div class="container p-textfield mdui-container">

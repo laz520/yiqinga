@@ -1,7 +1,7 @@
-<?php 
+<?php
 
-include './header.php';
-include("conn.php");
+include '../admin/header.php';
+include("../conn.php");
 
 ?>
 

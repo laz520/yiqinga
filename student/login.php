@@ -1,7 +1,9 @@
 <?php
 
-include './header.php';
-include ('conn.php');
+include '../admin/header.php';
+include("../conn.php");
+
+
 
 
 
@@ -43,4 +45,4 @@ include ('conn.php');
 
 </div>
 
-<script src="css/js.js" ></script>
+<script src="../css/js.js" ></script>

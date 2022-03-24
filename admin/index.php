@@ -35,7 +35,7 @@ include './header.php';
 
 <!-- 管理员顶部的信息 -->
 <div class="mdui-card-media">
-  <img src="a.png" style=" border-radius:20px ; height:300px;  object-fit: cover;"/>
+  <img src="../icons/a.png" style=" border-radius:20px ; height:300px;  object-fit: cover;"/>
 
   <!-- 可以有按钮可以没有 -->
   <div class="mdui-card-menu">
@@ -45,7 +45,7 @@ include './header.php';
 
 <!-- 我的标题 -->
 <div class="mdui-card-primary">
-  <div class="mdui-card-primary-title">欢迎登陆疫情管理员系统</div>
+  <div class="mdui-card-primary-title">欢迎登陆<?php echo $row['title']; ?></div>
   <div class="mdui-card-primary-subtitle">welcome </div>
 </div>
 
@@ -63,9 +63,9 @@ include './header.php';
   </div>
   <ul class="mdui-collapse-item-body mdui-list mdui-list-dense">
     <li class="mdui-list-item mdui-ripple"><a href="gg.php">网站公告设置</a></li>
-    <li class="mdui-list-item mdui-ripple"><a href="admin/set.php">网站信息设置</a></li>
-    <li class="mdui-list-item mdui-ripple"><a href="list.php">学生信息管理</a></li>
-    <li class="mdui-list-item mdui-ripple"><a href="teacher/teacher.php">老师信息管理</a></li>
+    <li class="mdui-list-item mdui-ripple"><a href="set.php">网站信息设置</a></li>
+    <li class="mdui-list-item mdui-ripple"><a href="../student/list.php">学生信息管理</a></li>
+    <li class="mdui-list-item mdui-ripple"><a href="../teacher/teacher.php">老师信息管理</a></li>
   </ul>
 </li>
 

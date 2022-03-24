@@ -1,4 +1,8 @@
+<?php
+include ('con.php');
 
+
+?>
 <!DOCTYPE html>
 <html lang="zh-CN">
 
@@ -7,11 +11,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
   <meta name="renderer" content="webkit"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=5.0">
-  <meta http-equiv="Cache-Control" content="no-siteapp"/>
-  <title>疫情防控MduiAdmin</title>
+  <meta ht0p-equiv="Cache-Control" content="no-siteapp"/>
+  <title><?php echo $row['title']; ?></title>
   <meta name="description" content="currentItem.description" />
- <link rel="stylesheet" href="css/style.css"  />
-  <link rel="stylesheet" href="css/mdui.min.css"><link rel="stylesheet" href="https://cdn.w3cbus.com/mdui/docs~1/static/index.0132e177.css">
+ <link rel="stylesheet" href="../css/style.css"  />
+  <link rel="stylesheet" href="../css/mdui.min.css"><link rel="stylesheet" href="https://cdn.w3cbus.com/mdui/docs~1/static/index.0132e177.css">
  </head>
  <!-- 侧边栏边距 -->
 <body
@@ -32,7 +36,7 @@
     >
       <i class="mdui-icon material-icons">menu</i>
     </span>
-      <a href="./" class="mdui-typo-title">疫情防控</a>
+      <a href="index.php" class="mdui-typo-title"><?php echo $row['title']; ?></a>
     <div class="mdui-toolbar-spacer"></div>
  
   <a href="javascript:;" class="mdui-btn mdui-btn-icon mdui-collapse-item-close">
@@ -68,9 +72,9 @@
 
   <label class="mdui-list-item mdui-ripple">
     <div class="mdui-list-item-avatar">
-      <img src="http://q1.qlogo.cn/g?b=qq&nk=2104819695&s=100"/>
+      <img src="http://q1.qlogo.cn/g?b=qq&nk=<?php echo $row['qq']; ?>&s=100"/>
     </div>
-    <div class="mdui-list-item-content">黑色童年</div>
+    <div class="mdui-list-item-content"><?php echo $row['title']; ?></div>
     <div class="mdui-checkbox">
      
     </div>
@@ -99,17 +103,17 @@
           </div>
           <div class="mdui-collapse-item-body mdui-list">
 
-          <a href="reg.php"  class="
+          <a href="../student/reg.php" class="
           mdui-list-item
           mdui-ripple
           ">注册</a>
-          <a href="login.php"  class="
+          <a href="../student/login.php" class="
           mdui-list-item
           mdui-ripple
           ">登陆</a>
           
 
-          <a href="teacher/regteacher.php" class="
+          <a href="../teacher/regteacher.php" class="
           mdui-list-item
           mdui-ripple
           ">注册老师</a>
@@ -136,7 +140,7 @@
           </div>
           <div class="mdui-collapse-item-body mdui-list">
             <a
-                  href="admin/set.php"
+                  href="set.php"
                   class="
                     mdui-list-item
                     mdui-ripple
@@ -168,13 +172,13 @@
           </div>
           <div class="mdui-collapse-item-body mdui-list">
             <a
-                  href="list.php"
+                  href="../student/list.php"
                   class="
                     mdui-list-item
                     mdui-ripple
                     "
                 >查看学生数据</a><a
-                  href="teacher/teacher.php"
+                  href="../teacher/list.php"
                   class="
                     mdui-list-item
                     mdui-ripple
@@ -182,7 +186,7 @@
                 >查看老师数据</a>
 
                 <a
-                  href="adminset.php"
+                  href="../root/adminset.php"
                   class="
                     mdui-list-item
                     mdui-ripple
@@ -207,13 +211,13 @@
           </div>
           <div class="mdui-collapse-item-body mdui-list">
             <a
-                  href="teacher/sq.php"
+                  href="../teacher/sq.php"
                   class="
                     mdui-list-item
                     mdui-ripple
                     "
                 >申请老师</a><a
-                  href="admin.php"
+                  href="../root/admin.php"
                   class="
                     mdui-list-item
                     mdui-ripple
@@ -230,7 +234,7 @@
 <a id="anchor-top"></a>
  
 
-<script src="js/mdui.min.js"></script><script src="https://cdn.w3cbus.com/mdui/docs~1/static/index.95ae2041.js"></script>
+<script src="../js/mdui.min.js"></script><script src="https://cdn.w3cbus.com/mdui/docs~1/static/index.95ae2041.js"></script>
 
 </body>
   </html–
