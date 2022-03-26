@@ -57,12 +57,18 @@ $result = $conn->query($sql);
 
     while($row=mysqli_fetch_array($result)) {
 
+        if($row['fengxian'] == 1){
+            $a = "无风险";
+        }else{
+            $a = "有风险";
+        }
+
         echo "<tr><td>"  . $row["id"].  "</td>" , "<td>" . $row["xingming"]. "</td>"
         , "<td>" . $row["school"]. "</td>"
         , "<td>" . $row["xibu"]. "</td>" ,
             "<td>" . $row["class"]. "</td>" ,
             "<td>" . $row["zhenshu"]. "</td>" ,
-            "<td>" . $row['fengxian'] . "</td>" ,
+            "<td>" .$a. "</td>" ,
             "<td>" . $row["name"]. "</td>" ,
             "<td>" . $row["pass"]. "</td>";
 
