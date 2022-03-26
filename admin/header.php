@@ -18,6 +18,8 @@ include ('con.php');
   <link rel="stylesheet" href="../css/mdui.min.css"><link rel="stylesheet" href="https://cdn.w3cbus.com/mdui/docs~1/static/index.0132e177.css">
  </head>
  <!-- 侧边栏边距 -->
+
+
 <body
 
   class="
@@ -172,13 +174,13 @@ include ('con.php');
           </div>
           <div class="mdui-collapse-item-body mdui-list">
             <a
-                  href="../student/list.php"
+                  href="ss1.php"
                   class="
                     mdui-list-item
                     mdui-ripple
                     "
                 >查看学生数据</a><a
-                  href="../teacher/list.php"
+                  href="teacher.php"
                   class="
                     mdui-list-item
                     mdui-ripple
