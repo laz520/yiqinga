@@ -14,6 +14,7 @@ include 'header.php';
 
     }
 
+
 </style>
 <body>
 
@@ -24,7 +25,8 @@ include 'header.php';
     </div>
     <input type="submit" value="搜索" class="mdui-btn mdui-color-theme-accent mdui-ripple" id="btn">
 </form>
-<table class="mdui-table mdui-table-selectable   ">
+<table class="mdui-table ">
+    <form action="shanchu.php" method="post">
     <thead >
 
 
@@ -41,7 +43,9 @@ include 'header.php';
         <th class="mdui-table-col-numeric" mdui-tooltip="{content: '用户名.'}">用户名</th>
         <th class="mdui-table-col-numeric" mdui-tooltip="{content: '密码'}">密码</th>
     </tr>
+
     </thead>
+
     <tbody>
 
 
@@ -61,15 +65,16 @@ $result = $conn->query($sql);
             "<td>" . $row['fengxian'] . "</td>" ,
             "<td>" . $row["name"]. "</td>" ,
             "<td>" . $row["pass"]. "</td>";
+       echo "<td><input type='submit' class='mdui-btn mdui-color-theme-accent mdui-ripple' value='删除'> </td>";
 
 }
 
 
 
 ?>
-    </tbody>
+       </tbody>
 
-</table>
+</table></form>
 <script>
 
 
