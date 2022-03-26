@@ -66,11 +66,11 @@ $result = $conn->query($sql);
             "<td>" . $row["name"]. "</td>" ,
             "<td>" . $row["pass"]. "</td>";
 
-      echo  "<td><input type='text' placeholder='输入id' class='mdui-textfield-input' name='id' style='width: 50px'> </td>";
-         echo "<td><input type='submit' class='mdui-btn mdui-color-theme-accent mdui-ripple mdui-float-right'  value='删除'>
-</td>";
-}
 
+}
+echo  "<td><input type='text' placeholder='输入id' class='mdui-textfield-input' name='id' style='width: 50px'> </td>";
+echo "<td><input type='submit' class='mdui-btn mdui-color-theme-accent mdui-ripple mdui-float-right'  value='删除'>
+</td>";
 
 //测试
 ?>
