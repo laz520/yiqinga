@@ -47,7 +47,7 @@ include("../conn.php");
       $result = $conn->query($sql);
 
       if ($result->num_rows > 0) {
-      // 输出数据
+      // 输出数据1
 
       while($row = $result->fetch_assoc()) {
 
