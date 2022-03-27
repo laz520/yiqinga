@@ -1,4 +1,5 @@
 <?php
+// 作者：黑色童年
 $servername = "localhost";
 $username = "root";
 $password = "root";
