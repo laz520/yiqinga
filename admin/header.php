@@ -58,8 +58,10 @@ include ('con.php');
 <div class="mdui-drawer mdui-drawer-right mdui-drawer-close" id="main-xi"  >
 <ul class="mdui-list">
       <li class="mdui-list-item mdui-ripple">
-       <i class="mdui-icon material-icons">delete</i>    <div class="mdui-list-item-content">退出登录</div>
-      </li>
+          <form action="tc.php" method="post">
+     <button class="mdui-btn mdui-color-theme-accent mdui-ripple" name="tijiao">退出登陆</button>
+          </form>
+           </li>
      
      
     </ul>
@@ -240,3 +242,7 @@ include ('con.php');
 
 </body>
   </html–
+  <?php
+   if (isset($_POST['tijiao'])) {
+   echo "嘻嘻";
+    }
