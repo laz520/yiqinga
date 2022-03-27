@@ -1,25 +1,27 @@
 <?php
+session_start();
+$user=$_SESSION['user'];
+if(!isset($user)){
+    echo "<script> alert('你还未登陆')</script>";
+    echo "<script>window.location.assign('login.php')</script>";
+    exit();
+}
+
+//登录时保存的该用户SessionID
+
 
 include './header.php';
-//session_start();
 
 
 
 
-////取Session中的用户信息
-//$user=$_SESSION['user'];
 
-////判断是否有效
-//if(!isset($user)){
-// echo "您未登录！登录";
-// exit();
-//}
-//
-////登录时保存的该用户SessionID
-//$sessin_id=file_get_contents('session_id/'.$user);
-//
-////如果当前的SessionID与之前记录的SessionID不匹配
-////说明已在别处登录
+//取Session中的用户信息
+
+//判断是否有效
+
+//如果当前的SessionID与之前记录的SessionID不匹配
+//说明已在别处登录
 //if(session_id() != $sessin_id){
 // //注销当前用户
 // unset($_SESSION['user']);
