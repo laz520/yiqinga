@@ -1,10 +1,35 @@
 <?php
 
 include './header.php';
+//session_start();
 
 
+
+
+////取Session中的用户信息
+//$user=$_SESSION['user'];
+
+////判断是否有效
+//if(!isset($user)){
+// echo "您未登录！登录";
+// exit();
+//}
+//
+////登录时保存的该用户SessionID
+//$sessin_id=file_get_contents('session_id/'.$user);
+//
+////如果当前的SessionID与之前记录的SessionID不匹配
+////说明已在别处登录
+//if(session_id() != $sessin_id){
+// //注销当前用户
+// unset($_SESSION['user']);
+// echo "您已在别处登录！从新登录";
+// exit();
+//}else{
+// echo "欢迎您：".$user;
+// echo " 注销";
+//}
 ?>
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">

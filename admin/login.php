@@ -30,7 +30,7 @@ include ('con.php');
             <!-- login登陆按钮 -->
 
             <div class="mdui-col">
-                <button class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple">登陆</button>
+                <button class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple" name="login">登陆</button>
             </div>
              </div>
 
