@@ -30,7 +30,7 @@ include("../conn.php");
             <!-- login登陆按钮 -->
 
             <div class="mdui-col">
-                <button class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple">登陆</button>
+                <button class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple" name="login">登陆</button>
             </div>
             <a href="./regteacher.php" class="text1 mdui-text-color-pink" >没有教师账号密码？点击注册 ！</a>
     </div>

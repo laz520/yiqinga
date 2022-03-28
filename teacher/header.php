@@ -54,11 +54,11 @@ include  ('../conn.php');
 <!-- 右边栏的手风琴 -->
 <div class="mdui-drawer mdui-drawer-right mdui-drawer-close" id="main-xi"  >
     <ul class="mdui-list">
+        <form action="tc.php" method="post">
         <li class="mdui-list-item mdui-ripple">
-            <i class="mdui-icon material-icons">delete</i>    <div class="mdui-list-item-content">退出登录</div>
-        </li>
+            <button class="mdui-btn mdui-color-theme-accent mdui-ripple" name="tijiao">退出登陆</button>        </li>
 
-
+        </form>
     </ul>
 </div>
 
