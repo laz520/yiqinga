@@ -36,15 +36,7 @@ include ('../conn.php');
 
 <div class="mdui-card">
 
-    <?php
 
-    $sql = "SELECT id, name, xingming, school , xibu  , class , zhenshu, fengxian , pass FROM xxx";
-    $result = $conn->query($sql);
-
-   $row = $result->fetch_assoc();
-
-
-    ?>
 
     <!-- 卡片头部，包含头像、标题、副标题 -->
     <div class="mdui-card-header">
