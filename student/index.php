@@ -1,7 +1,7 @@
 <?php
 session_start();
-$user=$_SESSION['user'];
-if(!isset($user)){
+$name=$_SESSION['name'];
+if(!isset($name)){
     echo "<script> alert('你还未登陆')</script>";
     echo "<script>window.location.assign('login.php')</script>";
     exit();

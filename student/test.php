@@ -4,7 +4,7 @@ include("../conn.php");
 
 header('Content-type:text/html; charset=utf-8');
 session_start();
-$sql = "SELECT id, name , pass FROM xxx";
+$sql = "SELECT id, name, pass FROM xxx";
 $result = $conn->query($sql);
 $row = $result->fetch_assoc();
 // 处理用户登录信息
@@ -34,8 +34,8 @@ if (isset($_POST['login'])) {
         $remember = "yes";
         // 若勾选7天内自动登录,则将其保存到Cookie并设置保留7天
         if ($_POST['remember'] == "yes") {
-            setcookie('name', $user, time()+7*24*60*60);
-            setcookie('code', md5($user.$pass), time()+7*24*60*60);
+            setcookie('name', $name, time()+7*24*60*60);
+            setcookie('code', md5($name.$pass), time()+7*24*60*60);
         } else {
             // 没有勾选则删除Cookie
             setcookie('name', '', time()-999);
