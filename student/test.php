@@ -4,15 +4,16 @@ include("../conn.php");
 
 header('Content-type:text/html; charset=utf-8');
 session_start();
-$sql = "SELECT id, name, pass FROM xxx";
-$result = $conn->query($sql);
-$row = $result->fetch_assoc();
+//$sql = "SELECT id, name, pass FROM xxx";
+
 // 处理用户登录信息
 if (isset($_POST['login'])) {
     # 接收用户的登录信息
     $name = trim($_POST['name']);
     $pass = trim($_POST['pass']);
-
+    $sql = "SELECT * FROM xxx  WHERE `name` =  '$name'";
+    $result = $conn->query($sql);
+    $row = $result->fetch_assoc();
 
 
     // 判断提交的登录信息
