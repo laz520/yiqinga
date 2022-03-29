@@ -81,7 +81,7 @@ include '../admin/header.php';
 <br>
 <!-- reg登陆按钮 -->
 <div class="mdui-col">
-    <button class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple">注册</button>
+    <button class="mdui-btn mdui-btn-block mdui-color-theme-accent mdui-ripple" name="reg">注册</button>
   </div>
   <a href="login.php" class="text1 mdui-text-color-pink" >已注册？点击登录！</a>
 </div>
