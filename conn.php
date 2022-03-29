@@ -1,5 +1,6 @@
 <?php
 // 作者：黑色童年
+// qq ：2104819695
 $servername = "localhost";
 $username = "root";
 $password = "root";
