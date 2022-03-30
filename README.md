@@ -1,7 +1,6 @@
 
 # 疫情后台系统admin
 
-<img width="1299" alt="image" src="https://raw.githubusercontent.com/laz520/yiqinga/yq/img/WX20220330-135512%402x.png">
 
 #    2022-3-22 ：
     1.对教师端的页面进行了完善。
