@@ -6,7 +6,8 @@ include './header.php';
     
 <div class="container p-textfield mdui-container">
   <center><h1 class="title mdui-text-color-theme mdui-center">疫情防控网站信息设置</h1></center>
-  
+
+    <form action="set1.php" method="post">
 <div class="mdui-textfield">
   <input class="mdui-textfield-input" type="text" placeholder="网站名称" name="title"/>
 </div>
@@ -30,3 +31,4 @@ include './header.php';
     <br></div><div class="mdui-textfield">
   <button class="mdui-btn mdui-center mdui-color-pink ">设置完成</button>
 </div>
+    </form>

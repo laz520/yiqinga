@@ -19,29 +19,25 @@ if (mysqli_num_rows($resulta) > 0) {
     // 输出数据
     while($rowa = mysqli_fetch_assoc($resulta)) {
 
-        if ($rowa['user'] == $user ){
+        if ($rowa['user'] == $user) {
             echo "<script>alert('抱歉已存在用户名！！');window.location.assign('regteacher.php')</script>";
 
-        }
-
-    }
-}
-
-
-
-
-//获取数据
-$sql = "INSERT INTO `teacher`(`id`,`user`,`name`,`school`,`xibu`,`class`,`pass`)
+        } else {
+            //获取数据
+            $sql = "INSERT INTO `teacher`(`id`,`user`,`name`,`school`,`xibu`,`class`,`pass`)
 VALUES (null,'$user','$name','$school','$xibu','$class','$pass')";
 
 //插入数据库
-$query = mysqli_query($conn, $sql);
-if($query){
-    echo "<script>alert('注册成功！！');window.location.assign('index.php')</script>";
-}else{
-    echo "<script>alert('注册失败');window.location.assign('regteacher.php')</script>" , $conn->error;
+            $query = mysqli_query($conn, $sql);
+            if ($query) {
+                echo "<script>alert('注册成功！！');window.location.assign('index.php')</script>";
+            } else {
+                echo "<script>alert('注册失败');window.location.assign('regteacher.php')</script>", $conn->error;
+            }
+
+
+        }
+
+
+    }
 }
-
-
-
-?>

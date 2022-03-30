@@ -14,6 +14,7 @@ if (isset($_POST['login'])) {
     $sql = "SELECT * FROM xxx  WHERE `name` =  '$name'";
     $result = $conn->query($sql);
     $row = $result->fetch_assoc();
+    $id = $row['id'];
 
 
     // 判断提交的登录信息
@@ -31,6 +32,7 @@ if (isset($_POST['login'])) {
     } elseif (($name = $row['name']) && ($pass = $row['pass'])) {
         # 用户名和密码都正确,将用户信息存到Session中
         $_SESSION['name'] = $name;
+        $_SESSION['id'] = $id;
         $_SESSION['islogin'] = 1;
         $remember = "yes";
         // 若勾选7天内自动登录,则将其保存到Cookie并设置保留7天

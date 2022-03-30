@@ -41,13 +41,8 @@ include ('../conn.php');
     <!-- 卡片头部，包含头像、标题、副标题 -->
     <div class="mdui-card-header">
         <img class="mdui-card-header-avatar" src="http://q1.qlogo.cn/g?b=qq&nk=2104819695s&s=100"/>
-        <div class="mdui-card-header-title">姓名：<?php
-            $sql = "SELECT id, name, xingming, school , xibu  , class , zhenshu, fengxian , pass FROM xxx";
-            $result = $conn->query($sql);
-
-            $row = $result->fetch_assoc();
-            echo $row['xingming'];
-            ?></div>
+        <div class="mdui-card-header-title">姓名
+            </div>
         <div class="mdui-card-header-subtitle">班级：
 
             <?php
@@ -55,7 +50,7 @@ include ('../conn.php');
             $result = $conn->query($sql);
 
             $row = $result->fetch_assoc();
-            echo $row['class'];
+            echo $row['id'];
             ?>
         </div>
     </div>
