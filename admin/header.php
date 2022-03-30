@@ -189,50 +189,12 @@ include ('con.php');
                     "
                 >查看老师数据</a>
 
-                <a
-                  href="../root/adminset.php"
-                  class="
-                    mdui-list-item
-                    mdui-ripple
-                    "
-                >查看管理员数据</a>
           </div>
         </div>
-
-
-
-        <div class="
-          mdui-collapse-item
-          "
-        >
-          <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
-          
-            <i class="mdui-icon material-icons mdui-list-item-icon
-              mdui-icon material-icons
-              mdui-text-color-pink">recent_actors</i>
-            <div class="mdui-list-item-content">申请管理</div>
-            <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
-          </div>
-          <div class="mdui-collapse-item-body mdui-list">
-            <a
-                  href="../teacher/sq.php"
-                  class="
-                    mdui-list-item
-                    mdui-ripple
-                    "
-                >申请老师</a><a
-                  href="../root/admin.php"
-                  class="
-                    mdui-list-item
-                    mdui-ripple
-                    "
-                >申请管理员</a>
-          </div>
-        </div>
-        </div>
-        
-        
   </div>
+
+</div>
+
   
 </div>
 <a id="anchor-top"></a>
@@ -242,7 +204,3 @@ include ('con.php');
 
 </body>
   </html–
-  <?php
-   if (isset($_POST['tijiao'])) {
-   echo "嘻嘻";
-    }
