@@ -1,6 +1,9 @@
 <?php
 include  ('../conn.php');
-
+$sqla = "SELECT * FROM teacher WHERE user='".$_SESSION['user']."'";
+$resulta = $conn->query($sqla);
+$rowa  = mysqli_fetch_assoc($resulta);
+$user = $_SESSION['user'];
 ?>
 <!DOCTYPE html>
 <html lang="zh-CN">
@@ -74,11 +77,7 @@ include  ('../conn.php');
                 <img src="http://q1.qlogo.cn/g?b=qq&nk=2104819695&s=100"/>
             </div>
             <div class="mdui-list-item-content">姓名：<?php
-                $sql = "SELECT id, user,name, school , xibu  , class , pass FROM teacher";
-                $result = $conn->query($sql);
-
-                $row = $result->fetch_assoc();
-                echo $row['name'];
+               echo $rowa['name']
                 ?>
 
                 </div>

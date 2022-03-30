@@ -1,8 +1,11 @@
 <?php
 
 include  ('../conn.php');
-
+$sqla = "SELECT * FROM xxx WHERE name='".$_SESSION['name']."'";
+$resulta = $conn->query($sqla);
+$rowa = mysqli_fetch_assoc($resulta);
 ?>
+
 <!DOCTYPE html>
 <html lang="zh-CN">
 
@@ -76,13 +79,8 @@ include  ('../conn.php');
             <div class="mdui-list-item-avatar">
                 <img src="http://q1.qlogo.cn/g?b=qq&nk=2104819695&s=100"/>
             </div>
-            <div class="mdui-list-item-content">姓名：<?php
-                $sql = "SELECT id, name, xingming, school , xibu  , class , zhenshu, fengxian , pass FROM xxx";
-                $result = $conn->query($sql);
+            <div class="mdui-list-item-content">姓名： <?php echo $rowa['xingming']?>
 
-                $row = $result->fetch_assoc();
-                echo $row['xingming'];
-                ?>
 
                 </div>
             <div class="mdui-checkbox">

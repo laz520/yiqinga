@@ -1,5 +1,9 @@
 <?php
 session_start();
+include ("../conn.php");
+$sqla = "SELECT * FROM teacher WHERE user='".$_SESSION['user']."'";
+$resulta = $conn->query($sqla);
+$rowa = mysqli_fetch_assoc($resulta);
 $user=$_SESSION['user'];
 if(!isset($user)){
     echo "<script> alert('你还未登陆')</script>";
@@ -36,8 +40,8 @@ include './header.php';
     <!-- 卡片头部，包含头像、标题、副标题 -->
     <div class="mdui-card-header">
         <img class="mdui-card-header-avatar" src="http://q1.qlogo.cn/g?b=qq&nk=2104819695s&s=100"/>
-        <div class="mdui-card-header-title">教师疫情后台管理</div>
-        <div class="mdui-card-header-subtitle">黑色童年</div>
+        <div class="mdui-card-header-title"><?php echo  $rowa['name']?></div>
+        <div class="mdui-card-header-subtitle"><?php echo  $rowa['school']?></div>
     </div>
 
     <!-- 管理员顶部的信息 -->
