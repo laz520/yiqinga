@@ -1,5 +1,12 @@
 
 # 疫情后台系统admin
+![Image text](https://i.bmp.ovh/imgs/2022/03/30/991f89792122879b.png)
+
+![Image text](https://i.bmp.ovh/imgs/2022/03/30/89ea701d16fecd4a.png)
+
+![Image text](https://i.bmp.ovh/imgs/2022/03/30/ab2509f72f99ce44.png)
+
+![Image text](https://i.bmp.ovh/imgs/2022/03/30/c9d90b30e558f857.png)
 
 
 #    2022-3-22 ：
