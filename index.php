@@ -139,27 +139,7 @@ li{
 
                     </div>
                 </div>
-                <div class="mdui-panel" mdui-panel>
 
-                    <div class="mdui-panel-item">
-                        <div class="mdui-panel-item-header mdui-color-green-200">
-                            <div class="mdui-panel-item-title">管理员食用方法</div>
-
-                            <i class="mdui-panel-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
-                        </div>
-                        <div class="mdui-panel-item-body">
-
-                            <div class="mdui-card-actions">
-                                <img src="icons/3.png" height="100px" width="130px">
-                                <h3>Tpis：点击一下哦！</h3>
-                                <a class="mdui-btn mdui-ripple"  href="./root/login.php">管理员登陆</a>
-                                <a class="mdui-btn mdui-ripple" href="./root/reg.php">管理员注册</a>
-
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
 
                 <li>
                     <h1 class="mdui-text-color-orange-600">关于程序</h1>
