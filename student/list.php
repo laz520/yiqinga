@@ -1,8 +1,8 @@
 <?php
-
+session_start();
 include './header.php';
 include("../conn.php");
-
+$name=$_SESSION['name'];
 ?>
 
 <div class="mdui-card ">
@@ -43,38 +43,28 @@ include("../conn.php");
 
 <?php
       //设置变量sql的字段为
-      $sql = "SELECT id, name, xingming, school , xibu  , class , zhenshu, fengxian , pass FROM xxx";
-      $result = $conn->query($sql);
-
-      if ($result->num_rows > 0) {
-      // 输出数据1
-
-      while($row = $result->fetch_assoc()) {
+        $sqla = "SELECT * FROM xxx WHERE name='".$_SESSION['name']."'";
+      $name=$_SESSION['name'];
+      $resulta = $conn->query($sqla);
+      $rowa = $resulta->fetch_assoc();
 
 //          这里是有无风险的bug 判断不出 是否有风险 后续来更改
-          if($row["zhenshu"] ==1){
+          if($rowa["zhenshu"] ==1){
               $a = "无风险";
           }else{
               $a = "有风险";
 
           }
-
-//            输出学生数据库里面的数据
-          echo "<tr><td>"  . $row["id"].  "</td>" , "<td>" . $row["xingming"]. "</td>"
-          , "<td>" . $row["school"]. "</td>"
-          , "<td>" . $row["xibu"]. "</td>" ,
-          "<td>" . $row["class"]. "</td>" ,
-          "<td>" . $row["zhenshu"]. "</td>" ,
+//     输出学生数据库里面的数据
+          echo "<tr><td>"  . $rowa["id"].  "</td>" , "<td>" . $rowa["xingming"]. "</td>"
+          , "<td>" . $rowa["school"]. "</td>"
+          , "<td>" . $rowa["xibu"]. "</td>" ,
+          "<td>" . $rowa["class"]. "</td>" ,
+          "<td>" . $rowa["zhenshu"]. "</td>" ,
           "<td>" . $a . "</td>" ,
-          "<td>" . $row["name"]. "</td>" ,
-          "<td>" . $row["pass"]. "</td>" ,
-
-          "<br>";
-          }
-          } else {
-          echo "0 结果";
-          }
-      ?>
+          "<td>" . $rowa["name"]. "</td>" ,
+          "<td>" . $rowa["pass"]. "</td>";
+          ?>
       </tbody>
 
   </table>
