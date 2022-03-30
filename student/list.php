@@ -48,7 +48,7 @@ $name=$_SESSION['name'];
       $resulta = $conn->query($sqla);
       $rowa = $resulta->fetch_assoc();
 
-//          这里是有无风险的bug 判断不出 是否有风险 后续来更改
+//          这里是有无风险的bug 判断不出 是否有风险 后续来更改已更改
           if($rowa["zhenshu"] ==1){
               $a = "无风险";
           }else{
