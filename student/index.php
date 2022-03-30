@@ -1,7 +1,7 @@
 <?php
 session_start();
 include ('../conn.php');
-//获取登陆的SESSION信息和数据库的name对比1
+//获取登陆的SESSION信息和数据库的name对比
 $sqla = "SELECT * FROM xxx WHERE name='".$_SESSION['name']."'";
 $resulta = $conn->query($sqla);
 $rowa = mysqli_fetch_assoc($resulta);
