@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 include  ('../conn.php');
 $sqla = "SELECT * FROM xxx WHERE name='".$_SESSION['name']."'";
 $resulta = $conn->query($sqla);
@@ -77,7 +77,7 @@ $rowa = mysqli_fetch_assoc($resulta);
 
         <label class="mdui-list-item mdui-ripple">
             <div class="mdui-list-item-avatar">
-                <img src="http://q1.qlogo.cn/g?b=qq&nk=2104819695&s=100"/>
+                <img src="http://q1.qlogo.cn/g?b=qq&nk=<?php echo $rowa['qq']?>&s=100"/>
             </div>
             <div class="mdui-list-item-content">姓名： <?php echo $rowa['xingming']?>
 
