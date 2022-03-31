@@ -1,6 +1,6 @@
 <?php
 
-include '../admin/header.php';
+include './header.php';
 ?>
 
 <link rel="stylesheet" href="../css/style.css"  />

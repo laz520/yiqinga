@@ -43,8 +43,10 @@ if (isset($_POST['login'])) {
             setcookie('code', '', time()-999);
         }
         // 处理完附加项后跳转到登录成功的首页
-
-        header('location:index.php');
+        echo "<script>
+        alert('登陆成功！')
+        window.location.assign('index.php');
+</script>";
 
     }
 }
