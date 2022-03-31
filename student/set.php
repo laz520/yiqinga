@@ -1,18 +1,7 @@
 <?php
+include ("function.php");
+
 include './header.php';
-// 网站的标题
-// $title = "疫情管理系统"
-
-// // 站长信息
-// $zuozhe = "黑色童年"
-
-// // 管理员账号密码
-// $username ="admin"
-// $pass = '123456'
-
-// // qq头像的qq号
-// $qqimg = "2104819695"
-
 
 ?>
 

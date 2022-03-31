@@ -1,5 +1,5 @@
 <?php 
-
+include ("function.php");
 include './header.php';
 ?>
 <link rel="stylesheet" href="../css/1.css"  />

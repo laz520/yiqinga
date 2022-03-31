@@ -1,4 +1,5 @@
 <?php
+include ("function.php");
 session_start();
 include './header.php';
 include("../conn.php");
@@ -14,7 +15,7 @@ $name=$_SESSION['name'];
 <!-- 搜索框 -->
 <div class="mdui-table-fluid mdui-center mdui-p-a-3  ">
   <table class="mdui-table mdui-table-selectable   ">
-    <thead >
+    <thead style="text-align: center" >
     <div class="mdui-textfield mdui-textfield-expandable">
   <button class="mdui-textfield-icon mdui-btn mdui-btn-icon">
     <i class="mdui-icon material-icons">search</i>
@@ -37,9 +38,10 @@ $name=$_SESSION['name'];
         <th class="mdui-table-col-numeric" mdui-tooltip="{content: '风险地区'}">风险地区</th>
         <th class="mdui-table-col-numeric" mdui-tooltip="{content: '用户名.'}">用户名</th>
         <th class="mdui-table-col-numeric" mdui-tooltip="{content: '密码'}">密码</th>
+         <th class="mdui-table-col-numeric">QQ</th>
       </tr>
     </thead>
-      <tbody>
+      <tbody align="center">
 
 <?php
       //设置变量sql的字段为
@@ -63,7 +65,8 @@ $name=$_SESSION['name'];
           "<td>" . $rowa["zhenshu"]. "</td>" ,
           "<td>" . $a . "</td>" ,
           "<td>" . $rowa["name"]. "</td>" ,
-          "<td>" . $rowa["pass"]. "</td>";
+          "<td>" . $rowa["pass"]. "</td>",
+          "<td>" . $rowa['qq']. "</td>";
           ?>
       </tbody>
 

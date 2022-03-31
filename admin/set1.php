@@ -1,4 +1,5 @@
 <?php
+
 include ("../conn.php");
 
 
@@ -22,5 +23,5 @@ $result=mysqli_query($conn,$sql);
 if(!$result){
     die('无法修改数据,:'.mysqli_error($conn));
 }else{
-    echo "<script>window.location.assign('ss1.php')</script>";
+    echo "<script>window.location.assign('set.php')</script>";
 }

@@ -1,16 +1,5 @@
 <?php
-session_start();
-include ('../conn.php');
-//获取登陆的SESSION信息和数据库的name对比1
-$sqla = "SELECT * FROM xxx WHERE name='".$_SESSION['name']."'";
-$resulta = $conn->query($sqla);
-$rowa = mysqli_fetch_assoc($resulta);
-$name=$_SESSION['name'];
-if(!isset($name)){
-    echo "<script> alert('你还未登陆')</script>";
-    echo "<script>window.location.assign('login.php')</script>";
-    exit();
-}
+include ("function.php");
 
 include './header.php';
 
@@ -45,7 +34,7 @@ include './header.php';
 
     <!-- 卡片头部，包含头像、标题、副标题 -->
     <div class="mdui-card-header">
-        <img class="mdui-card-header-avatar" src="http://q1.qlogo.cn/g?b=qq&nk=2104819695s&s=100"/>
+        <img class="mdui-card-header-avatar" src="http://q1.qlogo.cn/g?b=qq&nk=<?php echo $rowa['qq']  ?>s&s=100"/>
         <div class="mdui-card-header-title">姓名 <?php echo $rowa['xingming']  ?>
             </div>
         <div class="mdui-card-header-subtitle">班级：<?php echo $rowa['school']?>
